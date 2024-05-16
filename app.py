@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from utilities import predict_pipeline
+# from utilities import predict_pipeline
 
 app = Flask(__name__)
 
