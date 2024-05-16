@@ -11,14 +11,15 @@ def predict():
     except KeyError:
         return jsonify({'error': 'No text was sent.'})
 
-    sample = [sample]
-    predictions = predict_pipeline(sample)
-    try:
-        result = predictions[0]
-    except TypeError as e:
-        result = jsonify({'error': str(e)})
+    # sample = [sample]
+    # predictions = predict_pipeline(sample)
+    # try:
+    #     result = predictions[0]
+    # except TypeError as e:
+    #     result = jsonify({'error': str(e)})
     
-    return result
+    # return result
+    return "We have received your text..."
 
 
 if  __name__ == "__main__":
