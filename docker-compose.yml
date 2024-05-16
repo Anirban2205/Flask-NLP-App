@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: NLP_app
+    image: sentiment_classifier
+    ports:
+      - 5000:5000
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      
